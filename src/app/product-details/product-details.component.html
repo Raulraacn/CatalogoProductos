@@ -1,0 +1,12 @@
+<h2>Detalles del producto</h2>
+<div class="container">
+  <div *ngIf="product">
+    <h3>{{ product.nombre }}</h3>
+    <h4>{{ product.precio | currency:'EUR' }}</h4>
+    <p>{{ product.detalles }}</p>
+    <img src="{{product.img}}" width="300px" height="300px">
+  </div>
+
+</div>
+
+
